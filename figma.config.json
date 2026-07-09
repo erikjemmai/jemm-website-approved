@@ -32,7 +32,8 @@
     "topNav": "48:208",
     "heroHome": "41:389",
     "footer": "54:280",
-    "disclaimer": "57:419"
+    "disclaimer": "57:419",
+    "partnerBand": "82:1111"
   },
   "syncNotes": "Use Figma MCP get_design_context with fileKey and nodeId to refresh copy and layout. Asset URLs from MCP expire in ~7 days; export to assets/images/ for production."
 }
