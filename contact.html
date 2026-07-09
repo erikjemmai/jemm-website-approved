@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <title>Contact — Jemm</title>
+  <meta name="description" content="Connect with the Jemm team for product inquiries, partnerships, and general questions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="site-logo" aria-label="Jemm home">
+        <img src="assets/logo-landscape.svg" alt="Jemm" width="73" height="18" />
+      </a>
+      <button class="site-nav-toggle" type="button" id="siteNavToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="jemm-arc.html">Jemm Arc</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="is-active" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-page" aria-labelledby="contact-hero-title">
+      <div class="hero-page__bg" aria-hidden="true">
+        <img src="assets/images/hero-product.jpg" alt="" />
+        <div class="hero-page__overlay"></div>
+      </div>
+      <div class="hero-page__content">
+        <h1 class="h1" id="contact-hero-title" style="color: var(--white);">Contact us</h1>
+        <p style="color: var(--lite-gray); margin: 8px 0 0;">We'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <section class="section section--black" aria-labelledby="contact-form-title">
+      <div class="container">
+        <div class="contact-grid">
+          <div>
+            <h2 class="h3" id="contact-form-title" style="color: var(--white); margin: 0 0 24px;">Send a message</h2>
+            <form class="contact-form" action="mailto:info@jemm.ai" method="post" enctype="text/plain">
+              <label>
+                Name
+                <input type="text" name="name" autocomplete="name" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" autocomplete="email" required />
+              </label>
+              <label>
+                I'm interested in
+                <select name="topic">
+                  <option value="product">Getting Jemm Arc</option>
+                  <option value="partnership">Partnership / collaboration</option>
+                  <option value="press">Press &amp; media</option>
+                  <option value="other">Other</option>
+                </select>
+              </label>
+              <label>
+                Message
+                <textarea name="message" required placeholder="Tell us about your project or question…"></textarea>
+              </label>
+              <button type="submit" class="btn btn--primary">Send message</button>
+            </form>
+          </div>
+
+          <div class="contact-info">
+            <div class="contact-info__block">
+              <h3>General inquiries</h3>
+              <p><a href="mailto:info@jemm.ai">info@jemm.ai</a></p>
+            </div>
+            <div class="contact-info__block">
+              <h3>Partnerships</h3>
+              <p>We welcome collaborative opportunities with professionals, creators, and brands looking to introduce seamless, local intelligence to exceptional projects and spaces.</p>
+              <p><a href="mailto:info@jemm.ai?subject=Partnership%20inquiry">Connect about a partnership</a></p>
+            </div>
+            <div class="contact-info__block">
+              <h3>Headquarters</h3>
+              <p>Jemm Tec LLC<br />United States</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--deep partner-band" aria-labelledby="contact-partner-title">
+      <div class="partner-band__copy">
+        <div>
+          <h2 class="h3" id="contact-partner-title" style="color: var(--white); margin: 0 0 24px;">Ready to own a Jemm Arc?</h2>
+          <p class="caption-12" style="margin: 0;">Voice-first. Local. It adapts to you. Tell us about your space and we'll guide you through next steps.</p>
+        </div>
+        <a href="jemm-arc.html" class="btn btn--primary">Explore Jemm Arc</a>
+      </div>
+      <div class="partner-band__visual" aria-hidden="true">
+        <img class="blur" src="assets/images/device-blur.png" alt="" />
+        <img class="device" src="assets/images/jemm-arc-device.png" alt="" />
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <img class="site-footer__logo" src="assets/logo-vertical.svg" alt="Jemm" width="56" height="47" />
+        <p class="caption-12" style="color: var(--white); margin: 0;">Live and work with Jemm.</p>
+      </div>
+      <div class="site-footer__links">
+        <div class="site-footer__col">
+          <a href="jemm-arc.html">Jemm Arc</a>
+          <a href="about.html">About Us</a>
+        </div>
+        <div class="site-footer__col">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="site-disclaimer">
+    <p>Disclaimer: All hardware renderings, lifestyle videos, ambient interface sequences, and person portrayals displayed on this site are AI-generated conceptual simulations for illustration purposes only. They do not represent final physical product designs, actual system user interfaces, or real individuals. Not actual property or operational footage. Subject to change during product development.</p>
+    <p>© 2026 Jemm Tec LLC. All rights reserved.</p>
+  </div>
+
+  <script src="js/site.js"></script>
+</body>
+</html>

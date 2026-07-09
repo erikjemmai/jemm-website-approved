@@ -1,0 +1,38 @@
+{
+  "fileKey": "f6l3Pb4cW3bLS7KsjqfNah",
+  "fileName": "Jemm Marketing Website",
+  "fileUrl": "https://www.figma.com/design/f6l3Pb4cW3bLS7KsjqfNah/Jemm-Marketing-Website",
+  "section": {
+    "name": "Version C",
+    "nodeId": "39:220"
+  },
+  "pages": {
+    "home": {
+      "file": "index.html",
+      "nodeId": "41:299",
+      "label": "Homepage"
+    },
+    "jemmArc": {
+      "file": "jemm-arc.html",
+      "nodeId": "75:104",
+      "label": "Jemm Arc Product Page"
+    },
+    "about": {
+      "file": "about.html",
+      "nodeId": "78:767",
+      "label": "About"
+    },
+    "contact": {
+      "file": "contact.html",
+      "nodeId": null,
+      "label": "Contact (not yet in Figma — built from nav + partner patterns)"
+    }
+  },
+  "components": {
+    "topNav": "48:208",
+    "heroHome": "41:389",
+    "footer": "54:280",
+    "disclaimer": "57:419"
+  },
+  "syncNotes": "Use Figma MCP get_design_context with fileKey and nodeId to refresh copy and layout. Asset URLs from MCP expire in ~7 days; export to assets/images/ for production."
+}

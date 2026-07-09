@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <title>About — Jemm</title>
+  <meta name="description" content="Founder-led team building premium home systems that prioritize reliability, privacy, and long-term usability." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="site-logo" aria-label="Jemm home">
+        <img src="assets/logo-landscape.svg" alt="Jemm" width="73" height="18" />
+      </a>
+      <button class="site-nav-toggle" type="button" id="siteNavToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="jemm-arc.html">Jemm Arc</a>
+        <a href="about.html" class="is-active" aria-current="page">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-page" aria-labelledby="about-hero-title">
+      <div class="hero-page__bg" aria-hidden="true">
+        <img src="assets/images/hero-product.jpg" alt="" />
+        <div class="hero-page__overlay"></div>
+      </div>
+      <div class="hero-page__content">
+        <h1 class="h1" id="about-hero-title" style="color: var(--white);">About us</h1>
+      </div>
+    </section>
+
+    <section class="section section--black" aria-labelledby="founder-title">
+      <div class="container">
+        <div class="split-card" style="max-width: 972px;">
+          <div class="split-card__media">
+            <img src="assets/images/christo.jpg" alt="Christo Georgiev, President of Jemm" loading="lazy" />
+          </div>
+          <div class="split-card__body">
+            <h2 class="h3" id="founder-title" style="color: var(--white);">Christo Georgiev</h2>
+            <p class="h4" style="color: var(--white); margin: 0;">President</p>
+            <p style="margin: 0;">Serial fintech entrepreneur with experience building and operating technology companies.</p>
+            <p style="margin: 0;">We are a founder-led team building premium home systems that prioritize absolute reliability, permanent privacy, and long-term usability. We believe the technology in your most personal spaces should be dependable, secure, and built to endure.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--gradient-dark" aria-labelledby="vision-title">
+      <div class="container">
+        <header class="section-header" style="margin-bottom: 56px;">
+          <h2 class="h2" id="vision-title" style="color: var(--coconut);">Our vision</h2>
+          <p class="h4" style="color: var(--lite-gray); margin: 0;">Technology you can trust.</p>
+        </header>
+        <div class="selling-points">
+          <article class="selling-point">
+            <img class="selling-point__icon" src="assets/icons/icon-local.svg" alt="" style="height: 52px;" />
+            <h3 class="selling-point__title">Run locally</h3>
+            <p class="selling-point__desc">Your system lives entirely on your home network. No distant clouds, no outside pipelines—just a fast, secure, and resilient environment that works even if the internet goes down.</p>
+          </article>
+          <article class="selling-point">
+            <img class="selling-point__icon" src="assets/icons/icon-reliable.svg" alt="" style="height: 52px;" />
+            <h3 class="selling-point__title">Reliable system</h3>
+            <p class="selling-point__desc">Automation you can actually trust. Jemm follows your exact preferences with predictable routines, never making mystery choices or hidden decisions behind the scenes.</p>
+          </article>
+          <article class="selling-point">
+            <img class="selling-point__icon" src="assets/icons/icon-lasting.svg" alt="" style="height: 44px;" />
+            <h3 class="selling-point__title">Built to last</h3>
+            <p class="selling-point__desc">Engineered for long-term usability. We design hardware and software that endures for years, completely eliminating the need for frustrating, expensive upgrades.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--ink" aria-labelledby="lab-title">
+      <div class="container lab-section">
+        <h2 class="h2" id="lab-title" style="color: var(--coconut);">Our Lab</h2>
+        <p class="h3" style="color: var(--lite-gray); margin: 0;">World-class testing. Local execution.</p>
+        <p style="margin: 0;">We maintain our own dedicated infrastructure to train, validate, and perfect our systems. This allows our team to develop and stress-test updates centrally in our lab, ensuring that the system deployed in your home is fully optimized, completely secure, and ready to run flawlessly on your local hardware.</p>
+        <p style="margin: 0;">Have a question for our team?</p>
+        <p style="margin: 0;">Connect with us at <a href="mailto:info@jemm.ai">info@jemm.ai</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <img class="site-footer__logo" src="assets/logo-vertical.svg" alt="Jemm" width="56" height="47" />
+        <p class="caption-12" style="color: var(--white); margin: 0;">Live and work with Jemm.</p>
+      </div>
+      <div class="site-footer__links">
+        <div class="site-footer__col">
+          <a href="jemm-arc.html">Jemm Arc</a>
+          <a href="about.html">About Us</a>
+        </div>
+        <div class="site-footer__col">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="site-disclaimer">
+    <p>Disclaimer: All hardware renderings, lifestyle videos, ambient interface sequences, and person portrayals displayed on this site are AI-generated conceptual simulations for illustration purposes only. They do not represent final physical product designs, actual system user interfaces, or real individuals. Not actual property or operational footage. Subject to change during product development.</p>
+    <p>© 2026 Jemm Tec LLC. All rights reserved.</p>
+  </div>
+
+  <script src="js/site.js"></script>
+</body>
+</html>

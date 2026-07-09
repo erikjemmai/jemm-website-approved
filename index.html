@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <title>Jemm — Live and work with Jemm</title>
+  <meta name="description" content="A seamless life companion that completes your daily tasks on command. Jemm Arc runs locally in your space." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="site-logo" aria-label="Jemm home">
+        <img src="assets/logo-landscape.svg" alt="Jemm" width="73" height="18" />
+      </a>
+      <button class="site-nav-toggle" type="button" id="siteNavToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Main">
+        <a href="index.html" class="is-active" aria-current="page">Home</a>
+        <a href="jemm-arc.html">Jemm Arc</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-home" aria-labelledby="hero-title">
+      <div class="hero-home__bg" aria-hidden="true">
+        <img src="assets/images/hero-product.jpg" alt="" />
+        <div class="hero-home__overlay"></div>
+      </div>
+      <div class="hero-home__content">
+        <div class="hero-home__copy">
+          <h1 class="h1" id="hero-title" style="color: var(--white);">Jemm is part of your world.</h1>
+          <p style="color: var(--lite-gray); margin: 0;">A seamless life companion that completes your daily tasks on command. Wherever you work, live, or gather, Jemm handles the background so you can focus on what matters.</p>
+        </div>
+        <div class="hero-home__actions">
+          <a href="#introducing-arc" class="btn btn--primary" id="heroSeeHow">See how it works</a>
+          <a href="contact.html" class="btn btn--primary">Get Jemm now</a>
+        </div>
+        <button type="button" class="icon-btn" id="heroScrollBtn" aria-label="Scroll to content">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="section section--gradient-dark" id="introducing-arc" aria-labelledby="arc-title">
+      <div class="container arc-intro">
+        <div class="section-header section-header--wide">
+          <p class="caption-14" style="color: var(--lite-gray); margin: 0;">Introducing</p>
+          <h2 class="arc-intro__title" id="arc-title">Jemm Arc</h2>
+          <p class="arc-intro__lead">A dedicated device built to listen, learn, and assist.<br />Always ready, never in the way.</p>
+          <p class="arc-intro__tagline">Powered by Jemm AI.</p>
+        </div>
+
+        <div class="device-showcase" aria-hidden="true">
+          <img class="device-showcase__blur" src="assets/images/device-blur.png" alt="" />
+          <img class="device-showcase__wave" src="assets/images/soundwave.png" alt="" />
+          <img class="device-showcase__device" src="assets/images/jemm-arc-device.png" alt="Jemm Arc device render" />
+        </div>
+
+        <a href="jemm-arc.html" class="btn btn--primary">Learn more</a>
+        <p class="caption-12 text-muted" style="margin: 0;">Device rendering for illustration purposes only. Not final design.</p>
+
+        <div class="selling-points">
+          <article class="selling-point">
+            <img class="selling-point__icon" src="assets/icons/icon-voice.svg" alt="" width="52" height="62" />
+            <h3 class="selling-point__title">Just ask</h3>
+            <p class="selling-point__desc">No more digging through confusing phone apps just to dim a light or check a schedule. Talk naturally to handle any task instantly.</p>
+          </article>
+          <article class="selling-point">
+            <img class="selling-point__icon" src="assets/icons/icon-instant.svg" alt="" width="52" height="62" />
+            <h3 class="selling-point__title">Instant reactions</h3>
+            <p class="selling-point__desc">Because Jemm processes everything locally right on the device, your commands happen in real time with zero lag or waiting.</p>
+          </article>
+          <article class="selling-point">
+            <img class="selling-point__icon" src="assets/icons/icon-adapt.svg" alt="" width="52" height="62" />
+            <h3 class="selling-point__title">Adapts to you.</h3>
+            <p class="selling-point__desc">Jemm learns your preferences and routines over time. It recognizes the people it interacts with to make every day run smoother.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--black" aria-labelledby="speak-title">
+      <div class="container hey-jemm">
+        <header class="section-header">
+          <h2 class="h1" id="speak-title" style="color: var(--coconut);">Simply speak.</h2>
+          <p class="h3" style="color: var(--white); margin: 0;">You ask, <span class="text-neon">Jemm does.</span></p>
+          <p style="margin: 0; max-width: 896px;">Talk naturally anywhere in your space. Jemm listens and acts on your requests instantly, giving you effortless voice control over your entire environment.</p>
+        </header>
+
+        <div class="hey-jemm__demo" id="heyJemmPanel">
+          <div class="hey-jemm__panel">
+            <h2 class="h1" style="color: var(--coconut); margin: 0;">"Hey Jemm"</h2>
+            <p class="h4" id="heyJemmPrompt" style="color: var(--coconut); margin: 0;">I'm home</p>
+            <div class="hey-jemm__response" id="heyJemmResponse"></div>
+            <div class="hey-jemm__chips" role="group" aria-label="Example commands">
+              <button type="button" class="chip-btn is-active">Arrive home</button>
+              <button type="button" class="chip-btn">Prepare meeting</button>
+              <button type="button" class="chip-btn">Focus &amp; study</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--charcoal" aria-labelledby="everyday-title">
+      <div class="container">
+        <header class="section-header" style="margin-bottom: 72px;">
+          <h2 class="h1" id="everyday-title" style="color: var(--coconut);">Everyday life. Made easier.</h2>
+          <p class="h3" style="color: var(--white); margin: 0;">Jemm <span class="text-neon">knows you.</span></p>
+          <p style="margin: 0;">Jemm Arc sits elegantly in your space, but Jemm AI is what brings it to life. By running entirely on your local device, Jemm seamlessly manages your daily tasks, coordinates your environments, and handles the logistics of your day—completely in the background.</p>
+        </header>
+
+        <div class="story-rows">
+          <article class="story-row">
+            <div class="story-row__media">
+              <img src="assets/images/story-1.jpg" alt="Arriving home with Jemm" loading="lazy" />
+            </div>
+            <div class="story-row__copy">
+              <h3 class="h2" style="color: var(--white);">Jemm <span class="text-neon">welcomes you</span> home after a long day.</h3>
+              <p style="margin: 0;">Jemm tracks your approach locally to orchestrate the perfect arrival. It opens your entryway, dials in your preferred climate, and sets the lighting scenes automatically—handling the transition so you can just walk in and unwind.</p>
+            </div>
+          </article>
+
+          <article class="story-row story-row--reverse">
+            <div class="story-row__media">
+              <img src="assets/images/story-2.jpg" alt="Meeting room prepared by Jemm" loading="lazy" />
+            </div>
+            <div class="story-row__copy">
+              <h3 class="h2" style="color: var(--white);">Last minute <span class="text-neon">meetings setup</span> by Jemm.</h3>
+              <p style="margin: 0;">When a last-minute meeting or brainstorm happens, just say the word. Jemm syncs with your calendar hardware instantly to find, clear, and secure an available workspace right then and there.</p>
+            </div>
+          </article>
+
+          <article class="story-row">
+            <div class="story-row__media">
+              <img src="assets/images/story-3.jpg" alt="Family gathering with Jemm" loading="lazy" />
+            </div>
+            <div class="story-row__copy">
+              <h3 class="h2" style="color: var(--white);"><span class="text-neon">Create memories</span> at the family gathering.</h3>
+              <p style="margin: 0;">Jemm manages the background details so you can stay in the zone with your guests. From queuing up media presentations to adjusting the background audio and lighting levels, it executes every setup on command without requiring a screen.</p>
+            </div>
+          </article>
+
+          <article class="story-row story-row--reverse">
+            <div class="story-row__media">
+              <img src="assets/images/story-4.jpg" alt="Jemm operating during power outage" loading="lazy" />
+            </div>
+            <div class="story-row__copy">
+              <h3 class="h2" style="color: var(--white);">Power out? No problem.<br />Jemm is <span class="text-neon">local and ready.</span></h3>
+              <p style="margin: 0;">Jemm doesn't rely on outside pipelines to function. Because the AI runs directly on the local Jemm Arc hardware, your security profiles, scheduled automations, and environmental controls remain fully operational even during a total neighborhood power failure.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--black" aria-labelledby="ownership-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="h2" id="ownership-title" style="color: var(--coconut);">Your moments stay with you.<br />On your device.</h2>
+          <p class="h3 text-neon" style="margin: 0;">Total ownership.</p>
+          <p style="margin: 0;">Jemm Arc belongs entirely to you. Everything runs directly on your hardware, so your routines, schedules, and habits never leave your device. No secrets, Just a reliable partner from day one.</p>
+        </header>
+        <div class="ownership-visual">
+          <img src="assets/images/ownership.jpg" alt="Jemm ownership and privacy visualization" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="cta-band__bg" aria-hidden="true">
+        <img src="assets/images/ready-for-jemm.jpg" alt="" />
+        <div class="cta-band__overlay"></div>
+      </div>
+      <div class="cta-band__content">
+        <h2 class="h1" id="cta-title" style="color: var(--white);">Ready to own a Jemm Arc?</h2>
+        <p style="margin: 0; font-weight: 500;">Voice-first. Local. It adapts to you.</p>
+        <a href="contact.html" class="btn btn--outline">Get Jemm Arc Now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <img class="site-footer__logo" src="assets/logo-vertical.svg" alt="Jemm" width="56" height="47" />
+        <p class="caption-12" style="color: var(--white); margin: 0;">Live and work with Jemm.</p>
+      </div>
+      <div class="site-footer__links">
+        <div class="site-footer__col">
+          <a href="jemm-arc.html">Jemm Arc</a>
+          <a href="about.html">About Us</a>
+        </div>
+        <div class="site-footer__col">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="site-disclaimer">
+    <p>Disclaimer: All hardware renderings, lifestyle videos, ambient interface sequences, and person portrayals displayed on this site are AI-generated conceptual simulations for illustration purposes only. They do not represent final physical product designs, actual system user interfaces, or real individuals. Not actual property or operational footage. Subject to change during product development.</p>
+    <p>© 2026 Jemm Tec LLC. All rights reserved.</p>
+  </div>
+
+  <script src="js/site.js"></script>
+  <script src="js/hey-jemm.js"></script>
+</body>
+</html>
