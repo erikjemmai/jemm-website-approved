@@ -195,7 +195,7 @@
   }
 
   .hey-jemm.hey-jemm--scenes {
-    --hey-jemm-scene-height: min(72vh, 640px);
+    --hey-jemm-scene-height: clamp(440px, 62svh, 540px);
     border-radius: 24px;
   }
 
@@ -203,13 +203,33 @@
     padding: 24px 16px 32px;
   }
 
+  .hey-jemm.hey-jemm--scenes .hey-jemm__panel {
+    gap: 16px;
+  }
+
+  .hey-jemm--scenes .hey-jemm__dialogue {
+    gap: 12px;
+  }
+
+  .hey-jemm--scenes .hey-jemm__wake {
+    font-size: clamp(1.875rem, 8vw, 2.125rem);
+  }
+
+  .hey-jemm--scenes .hey-jemm__command {
+    font-size: 1rem;
+  }
+
+  .hey-jemm--scenes .hey-jemm__response {
+    font-size: 1.125rem;
+  }
+
   .hey-jemm--scenes .hey-jemm__scenes {
-    gap: 10px;
+    gap: 8px;
   }
 
   .hey-jemm--scenes .hey-jemm__scene {
-    padding: 10px 16px;
-    font-size: var(--caption-14);
+    padding: 9px 14px;
+    font-size: 0.8125rem;
     white-space: normal;
     text-align: center;
   }

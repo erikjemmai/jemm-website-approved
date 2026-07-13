@@ -343,8 +343,8 @@ a { color: inherit; text-decoration: none; }
   }
 
   .hero-home {
-    min-height: max(640px, 100svh);
-    min-height: max(640px, 100dvh);
+    min-height: max(500px, 62svh);
+    min-height: max(500px, 62dvh);
     padding-bottom: 64px;
   }
 
