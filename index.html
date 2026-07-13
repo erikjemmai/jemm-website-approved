@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="assets/favicon.png" type="image/png" />
-  <title>Jemm — Live and work with Jemm</title>
+  <title>Jemm</title>
   <meta name="description" content="A seamless life companion that completes your daily tasks on command. Jemm Arc runs locally in your space." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,6 +39,7 @@
           src="assets/videos/hero-video.mp4"
           poster="assets/images/hero-product.jpg"
           autoplay
+          loop
           muted
           playsinline
           preload="auto"
@@ -52,7 +53,7 @@
             <p style="color: var(--lite-gray); margin: 0;">A seamless life companion that completes your daily tasks on command. Wherever you work, live, or gather, Jemm handles the background so you can focus on what matters.</p>
           </div>
           <div class="hero-home__actions">
-            <a href="#introducing-arc" class="btn btn--ghost" id="heroSeeHow">See how it works</a>
+            <a href="#simply-speak" class="btn btn--ghost" id="heroSeeHow">See how it works</a>
             <a href="contact.html" class="btn btn--ghost">Get Jemm now</a>
           </div>
         </div>
@@ -105,21 +106,21 @@
       <div class="simply-speak__stage">
         <section class="hey-jemm hey-jemm--scenes" id="hey-jemm" aria-labelledby="hey-jemm-title">
           <div class="hey-jemm__stage" aria-hidden="true">
-            <video class="hey-jemm__video" id="heyJemmVideo" autoplay muted playsinline disablepictureinpicture disableremoteplayback preload="metadata" data-current="assets/videos/im-home-hey-jemm.mp4" src="assets/videos/im-home-hey-jemm.mp4"></video>
+            <video class="hey-jemm__video" id="heyJemmVideo" autoplay muted playsinline disablepictureinpicture disableremoteplayback preload="metadata" data-current="assets/videos/breakfast-ready-hey-jemm.mp4" src="assets/videos/breakfast-ready-hey-jemm.mp4"></video>
             <div class="hey-jemm__stage-shade"></div>
           </div>
           <div class="hey-jemm__layout">
             <div class="hey-jemm__panel">
               <div class="hey-jemm__dialogue" aria-live="polite">
                 <h2 class="hey-jemm__wake" id="hey-jemm-title">"Hey Jemm"</h2>
-                <p class="hey-jemm__command is-active" id="jemmCommand">I'm home</p>
-                <p class="hey-jemm__response text-glisten" id="jemmResponse">Welcome home, Elena. Everything's ready for you.</p>
+                <p class="hey-jemm__command is-active" id="jemmCommand">Tell everyone breakfast is ready.</p>
+                <p class="hey-jemm__response text-glisten" id="jemmResponse">Got it — everyone's heading down now.</p>
               </div>
               <div class="hey-jemm__scenes-wrap">
                 <div class="hey-jemm__scenes" role="tablist" aria-label="Example scenes">
-                  <button class="hey-jemm__scene" type="button" role="tab" data-gem="radiant" data-video="assets/videos/im-home-hey-jemm.mp4" aria-selected="false">Arrive home</button>
-                  <button class="hey-jemm__scene" type="button" role="tab" data-gem="diamond" data-video="assets/videos/good-morning-hey-jemm.mp4" data-video-end="5.2" aria-selected="false">Good morning</button>
-                  <button class="hey-jemm__scene" type="button" role="tab" data-gem="amethyst" data-video="assets/videos/jemm-hero-background.mp4" data-video-end="5.2" aria-selected="false">Movie night</button>
+                  <button class="hey-jemm__scene" type="button" role="tab" data-gem="diamond" data-video="assets/videos/breakfast-ready-hey-jemm.mp4" aria-selected="false">Breakfast is ready</button>
+                  <button class="hey-jemm__scene" type="button" role="tab" data-gem="radiant" data-video="assets/videos/study-hey-jemm.mp4" aria-selected="false">Need to study</button>
+                  <button class="hey-jemm__scene" type="button" role="tab" data-gem="amethyst" data-video="assets/videos/movie-night-hey-jemm.mp4" aria-selected="false">Movie night</button>
                 </div>
               </div>
             </div>
@@ -139,7 +140,7 @@
         <div class="story-rows">
           <article class="story-row">
             <div class="story-row__media">
-              <img src="assets/images/story-1.jpg" alt="Arriving home with Jemm" loading="lazy" />
+              <video src="assets/videos/story-arrival.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Arriving home with Jemm"></video>
             </div>
             <div class="story-row__copy">
               <h3 class="h3" style="color: var(--white);">Jemm welcomes you home after a long day.</h3>
@@ -149,7 +150,7 @@
 
           <article class="story-row story-row--reverse">
             <div class="story-row__media">
-              <img src="assets/images/story-2.jpg" alt="Meeting room prepared by Jemm" loading="lazy" />
+              <video src="assets/videos/story-meeting.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Meeting room prepared by Jemm"></video>
             </div>
             <div class="story-row__copy">
               <h3 class="h3" style="color: var(--white);">Last minute meetings setup by Jemm.</h3>
@@ -159,7 +160,7 @@
 
           <article class="story-row">
             <div class="story-row__media">
-              <img src="assets/images/story-3.jpg" alt="Family gathering with Jemm" loading="lazy" />
+              <video src="assets/videos/story-birthday.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Family gathering with Jemm"></video>
             </div>
             <div class="story-row__copy">
               <h3 class="h3" style="color: var(--white);">Create memories at the family gathering.</h3>
@@ -169,11 +170,11 @@
 
           <article class="story-row story-row--reverse">
             <div class="story-row__media">
-              <img src="assets/images/story-4.jpg" alt="Jemm operating during power outage" loading="lazy" />
+              <video src="assets/videos/story-power-out.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Jemm operating during a power outage"></video>
             </div>
             <div class="story-row__copy">
               <h3 class="h3" style="color: var(--white);">Power out? No problem.<br />Jemm is local and ready.</h3>
-              <p style="margin: 0;">Jemm doesn't rely on outside pipelines to function. Because the AI runs directly on the local Jemm Arc hardware, your security profiles, scheduled automations, and environmental controls remain fully operational even during a total neighborhood power failure.</p>
+              <p style="margin: 0;">Jemm doesn't rely on outside connections to function. Because the AI runs directly on the local Jemm Arc hardware, your security profiles, scheduled automations, and environmental controls remain fully operational even during a total neighborhood power failure.</p>
             </div>
           </article>
         </div>

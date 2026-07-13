@@ -4,13 +4,13 @@
 
   var segments = [];
   var segmentIndex = 0;
-  var skipPartIndex = 2; // third segment: two Jemm Arc devices
+  var skipPartIndex = -1; // Play every portion of the family-arrival video.
 
   function buildSegments() {
     var duration = video.duration;
     if (!duration || !isFinite(duration)) return [];
 
-    // Video is treated as four equal beats; the third is skipped on loop.
+    // Video is treated as four equal beats so playback can restart smoothly.
     var part = duration / 4;
     var all = [
       [0, part],

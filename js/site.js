@@ -19,10 +19,11 @@
   }
 
   var heroSeeHow = document.getElementById("heroSeeHow");
-  if (heroSeeHow && arcSection) {
+  var simplySpeakSection = document.getElementById("simply-speak");
+  if (heroSeeHow && simplySpeakSection) {
     heroSeeHow.addEventListener("click", function (e) {
       e.preventDefault();
-      arcSection.scrollIntoView({ behavior: "smooth" });
+      simplySpeakSection.scrollIntoView({ behavior: "smooth" });
     });
   }
 

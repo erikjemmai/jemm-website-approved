@@ -1,25 +1,23 @@
 window.jemmHeyJemmDialogue = [
   {
-    command: "I'm home",
-    response: "Welcome home, Elena. Everything's ready for you.",
-    state: "responding",
-    gem: "radiant",
-    video: "assets/videos/im-home-hey-jemm.mp4"
-  },
-  {
-    command: "Good morning, Jemm",
-    response: "Good morning. The kitchen is set and your morning playlist is on.",
+    command: "Tell everyone breakfast is ready.",
+    response: "Got it — everyone's heading down now.",
     state: "responding",
     gem: "diamond",
-    video: "assets/videos/good-morning-hey-jemm.mp4",
-    videoEnd: 5.2
+    video: "assets/videos/breakfast-ready-hey-jemm.mp4"
+  },
+  {
+    command: "I need to focus and study for my exam.",
+    response: "You're all set. I've got everything ready for you — good luck studying.",
+    state: "responding",
+    gem: "radiant",
+    video: "assets/videos/study-hey-jemm.mp4"
   },
   {
     command: "Prepare movie night",
     response: "Movie night is ready. Lights dimmed, shades closed, and the room is set.",
     state: "responding",
     gem: "amethyst",
-    video: "assets/videos/jemm-hero-background.mp4",
-    videoEnd: 5.2
+    video: "assets/videos/movie-night-hey-jemm.mp4"
   }
 ];

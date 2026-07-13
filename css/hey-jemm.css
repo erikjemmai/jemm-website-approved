@@ -49,6 +49,7 @@
   overflow: hidden;
   background: #000;
   color: #fff;
+  outline: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .hey-jemm.hey-jemm--scenes .hey-jemm__stage {
