@@ -2,75 +2,30 @@
   var video = document.getElementById("heroVideo");
   if (!video) return;
 
-  var segments = [];
-  var segmentIndex = 0;
-  var skipPartIndex = -1; // Play every portion of the family-arrival video.
-
-  function buildSegments() {
-    var duration = video.duration;
-    if (!duration || !isFinite(duration)) return [];
-
-    // Video is treated as four equal beats so playback can restart smoothly.
-    var part = duration / 4;
-    var all = [
-      [0, part],
-      [part, part * 2],
-      [part * 2, part * 3],
-      [part * 3, duration]
-    ];
-
-    return all.filter(function (_, index) {
-      return index !== skipPartIndex;
-    });
-  }
-
-  function playCurrentSegment() {
-    if (!segments.length) return;
-    var start = segments[segmentIndex][0];
-    if (Math.abs(video.currentTime - start) > 0.15) {
-      video.currentTime = start;
-    }
-  }
-
-  function advanceSegment() {
-    segmentIndex = (segmentIndex + 1) % segments.length;
-    video.currentTime = segments[segmentIndex][0];
-  }
-
   function startPlayback() {
-    segments = buildSegments();
-    if (!segments.length) return;
-
-    segmentIndex = 0;
-    playCurrentSegment();
-
+    video.muted = true;
+    video.defaultMuted = true;
+    video.playsInline = true;
+    video.loop = true;
     var playPromise = video.play();
     if (playPromise && playPromise.catch) {
-      playPromise.catch(function () {
-        video.controls = false;
-      });
+      playPromise.catch(function () {});
     }
   }
-
-  video.addEventListener("loadedmetadata", startPlayback);
-
-  video.addEventListener("timeupdate", function () {
-    if (!segments.length) return;
-
-    var end = segments[segmentIndex][1];
-    if (video.currentTime >= end - 0.08) {
-      advanceSegment();
-    }
-  });
-
-  video.addEventListener("ended", function () {
-    advanceSegment();
-    video.play();
-  });
 
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     video.removeAttribute("autoplay");
     video.pause();
     video.currentTime = 0;
+    return;
   }
+
+  video.addEventListener("loadedmetadata", startPlayback);
+  video.addEventListener("canplay", startPlayback);
+  window.addEventListener("pageshow", startPlayback);
+  document.addEventListener("visibilitychange", function () {
+    if (!document.hidden) startPlayback();
+  });
+
+  if (video.readyState >= HTMLMediaElement.HAVE_METADATA) startPlayback();
 })();
