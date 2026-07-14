@@ -1512,3 +1512,9 @@ html.has-story-reveal .story-row__media.is-visible {
     white-space: nowrap;
   }
 }
+
+@media (min-width: 769px) {
+  .hero-home {
+    padding-bottom: 212px;
+  }
+}

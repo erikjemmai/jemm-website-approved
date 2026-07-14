@@ -4,6 +4,7 @@
   background: #000;
   padding: 48px 0 56px;
   min-height: 1200px;
+  scroll-margin-top: calc(var(--nav-h) + 16px);
 }
 
 .simply-speak__intro {
