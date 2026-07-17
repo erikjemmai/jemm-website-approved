@@ -11,7 +11,7 @@ window.jemmHeyJemmDialogue = [
     response: "You're all set. I've got everything ready for you — good luck studying.",
     state: "responding",
     gem: "radiant",
-    video: "assets/videos/study-hey-jemm.mp4?v=20260716"
+    video: "assets/videos/study-hey-jemm.mp4?v=20260717"
   },
   {
     command: "Prepare movie night",
