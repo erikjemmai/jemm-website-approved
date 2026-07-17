@@ -21,6 +21,7 @@
   }
 
   video.addEventListener("loadedmetadata", startPlayback);
+  video.addEventListener("loadeddata", startPlayback);
   video.addEventListener("canplay", startPlayback);
   window.addEventListener("pageshow", startPlayback);
   document.addEventListener("visibilitychange", function () {
@@ -28,4 +29,5 @@
   });
 
   if (video.readyState >= HTMLMediaElement.HAVE_METADATA) startPlayback();
+  window.setTimeout(startPlayback, 300);
 })();
