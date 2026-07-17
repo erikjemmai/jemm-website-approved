@@ -1112,6 +1112,10 @@ html.has-story-reveal .story-row__media.is-visible {
 }
 
 /* About — lab */
+.about-lab {
+  padding-block: clamp(72px, 7vw, 88px);
+}
+
 .lab-section {
   max-width: 874px;
   margin-inline: auto;
