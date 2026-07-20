@@ -481,6 +481,7 @@ a { color: inherit; text-decoration: none; }
   min-height: clamp(340px, 46vh, 480px);
 }
 
+.hero-page--product .hero-page__content,
 .hero-page--plain .hero-page__content {
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.55);
 }
@@ -497,9 +498,9 @@ a { color: inherit; text-decoration: none; }
 .hero-page--product .hero-page__overlay {
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.58) 0%,
-    rgba(0, 0, 0, 0.18) 42%,
-    rgba(0, 0, 0, 0.52) 100%
+    rgba(0, 0, 0, 0.28) 0%,
+    rgba(0, 0, 0, 0.04) 42%,
+    rgba(0, 0, 0, 0.24) 100%
   );
 }
 
@@ -512,6 +513,15 @@ a { color: inherit; text-decoration: none; }
     rgba(0, 0, 0, 0.58) 0%,
     rgba(0, 0, 0, 0.18) 42%,
     rgba(0, 0, 0, 0.52) 100%
+  );
+}
+
+.hero-page--legal .hero-page__bg::after {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.28) 0%,
+    rgba(0, 0, 0, 0.04) 42%,
+    rgba(0, 0, 0, 0.24) 100%
   );
 }
 
@@ -927,12 +937,13 @@ html.has-story-reveal .story-row__media.is-visible {
 .cta-band__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.48);
+  background: rgba(0, 0, 0, 0.26);
 }
 
 .cta-band__content {
   position: relative;
   z-index: 1;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column;
   align-items: center;
