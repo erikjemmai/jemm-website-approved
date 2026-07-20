@@ -410,7 +410,7 @@ a { color: inherit; text-decoration: none; }
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to top, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.18) 42%, rgba(0, 0, 0, 0.08) 100%),
+    linear-gradient(to top, #000 0%, rgba(0, 0, 0, 0.28) 42%, rgba(0, 0, 0, 0.08) 100%),
     rgba(0, 0, 0, 0.12);
 }
 
@@ -551,7 +551,7 @@ a { color: inherit; text-decoration: none; }
 
 /* Sections */
 .section {
-  padding-block: 56px;
+  padding-block: 72px;
 }
 
 .section--gradient-dark {
@@ -566,8 +566,7 @@ a { color: inherit; text-decoration: none; }
 
 /* Introducing Jemm Arc */
 .section--gradient-dark {
-  padding-top: 81px;
-  padding-bottom: 81px;
+  padding-block: 72px;
   overflow: visible;
 }
 
@@ -746,12 +745,7 @@ a { color: inherit; text-decoration: none; }
 
 @media (max-width: 640px) {
   .section {
-    padding-block: 40px;
-  }
-
-  .section--gradient-dark {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-block: 72px;
   }
 
   .arc-intro {
@@ -789,7 +783,7 @@ a { color: inherit; text-decoration: none; }
 
   .cta-band {
     min-height: 360px;
-    padding-block: 48px;
+    padding-block: 72px;
   }
 
   .split-card {
@@ -919,7 +913,7 @@ html.has-story-reveal .story-row__media.is-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px var(--gutter);
+  padding: 72px var(--gutter);
   text-align: center;
 }
 
@@ -1021,7 +1015,7 @@ html.has-story-reveal .story-row__media.is-visible {
   max-width: var(--container);
   margin-inline: auto;
   min-height: 350px;
-  padding: 56px clamp(var(--gutter), 5vw, 72px);
+  padding: 72px clamp(var(--gutter), 5vw, 72px);
 }
 
 .partner-band__copy {
@@ -1124,7 +1118,7 @@ html.has-story-reveal .story-row__media.is-visible {
 
 /* About — lab */
 .about-lab {
-  padding-block: clamp(72px, 7vw, 88px);
+  padding-block: 72px;
 }
 
 .lab-section {
